@@ -1,0 +1,115 @@
+/* Write your CSS here */
+
+.money-details-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 100%;
+}
+
+.money-details-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 14px;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.balance-item {
+  background-color: #ecfccb;
+  background-size: cover;
+  border: 1px solid #84cc16;
+}
+
+.income-item {
+  background-color: #cffafe;
+  background-size: cover;
+  border: 1px solid #06b6d4;
+}
+
+.expenses-item {
+  background-color: #ede9fe;
+  background-size: cover;
+  border: 1px solid #7c3aed;
+}
+
+.money-details-img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.money-details-heading {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.money-details-rupees {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  /* Write your CSS here */
+
+  .money-details-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .money-details-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 14px;
+    padding: 30px;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .balance-item {
+    background-color: #ecfccb;
+    background-size: cover;
+    border: 1px solid #84cc16;
+  }
+
+  .income-item {
+    background-color: #cffafe;
+    background-size: cover;
+    border: 1px solid #06b6d4;
+  }
+
+  .expenses-item {
+    background-color: #ede9fe;
+    background-size: cover;
+    border: 1px solid #7c3aed;
+  }
+
+  .money-details-img {
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .money-details-heading {
+    color: #475569;
+    font-family: 'Roboto';
+    font-size: 16px;
+  }
+
+  .money-details-rupees {
+    color: #475569;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
