@@ -176,15 +176,17 @@ class MoneyManager extends Component {
                 <p className="history-content">Amount</p>
                 <p className="history-content">Type</p>
               </div>
-              <ul className="history-list">
-                {transactionList.map(eachItem => (
-                  <TransactionItem
-                    key={eachItem.id}
-                    transItem={eachItem}
-                    deleteHistory={this.onClickHistory}
-                  />
-                ))}
-              </ul>
+              {transactionList.length > 0 && (
+                <ul className="history-list">
+                  {transactionList.map(eachItem => (
+                    <TransactionItem
+                      key={eachItem.id}
+                      transItem={eachItem}
+                      deleteHistory={this.onClickHistory}
+                    />
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>
