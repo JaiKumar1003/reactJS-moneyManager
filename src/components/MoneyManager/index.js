@@ -160,10 +160,11 @@ class MoneyManager extends Component {
                 id="type"
                 className="form-input"
               >
-                <option value="INCOME" selected>
-                  Income
-                </option>
-                <option value="EXPENSES">Expenses</option>
+                {transactionTypeOptions.map(eachOption => (
+                  <option key={eachOption.optionId} value={eachOption.optionId}>
+                    {eachOption.displayText}
+                  </option>
+                ))}
               </select>
               <button className="add-button" type="submit">
                 Add
